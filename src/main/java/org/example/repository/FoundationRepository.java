@@ -17,7 +17,7 @@ public class FoundationRepository<T> {
         session.remove(entity);
     }
 
-    public T findById(Session session, Long id) {
+    public T findById(Session session, Integer id) {
         return session.get(entityClass, id);
     }
 
